@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+
+{% block body %}
+<section class="service_section layout_padding " id="services" >
+    <div class="container ">
+      <h2 class="custom_heading mt-5">FARMING TIPS</h2>
+      <p class="custom_heading-text"></p>
+      <div class=" layout_padding2">
+        <div class="card-deck">
+            
+
+          <div class="card" onclick="redirectTo('https://youtu.be/76pwmQ1KZBU?feature=shared')">
+            <img class="card-img-top" src="static/images/card-item-3.png" alt="Card image cap" />
+            <div class="card-body" >
+              <h5 class="card-title"> <b>saffron farming</b></h5>
+              <p class="card-text" >
+                A Software Engineer Turns Agriculture Enthusiast Doing Saffron Farming In Mobile Containers In Pune
+              </p>
+            </div>
+          </div>
+
+          <div class="card" onclick="redirectTo('https://youtu.be/75FULlgfAt0?feature=shared')">
+            <img class="card-img-top" src="static/images/card-item-3.png" alt="Card image cap" />
+            <div class="card-body">
+              <h5 class="card-title"><b>Spirulina Farming</b></h5>
+              <p class="card-text">
+                Spirulina is a nutritious and easy to grow crop, which can be grown in any part of the world with minimal requirements. Get daily crop recommendations based on your health goals and dietary needs.</p>
+            </div>
+          </div>
+
+          <div class="card" onclick="redirectTo('https://youtu.be/FSOeV4OsNaw?feature=shared')">
+            <img class="card-img-top" src="static/images/card-item-3.png" alt="Card image cap" />
+            <div class="card-body">
+              <h5 class="card-title"><b>Goat farming business: Aurangabad  </b></h5>
+              <p class="card-text">
+                Goat forming is sustainable agricultural practice known for its low investment and high returns. In Maharashtra, favorable climatic conditions and increasing demand make it a promising business opportunity."    
+            </p>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function redirectTo(url) {
+        // Redirect to the specified URL
+        window.location.href = url;
+    }
+    </script>
+
+{% endblock %}

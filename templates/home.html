@@ -1,0 +1,196 @@
+{% extends 'base.html' %}
+
+{% block pagetitle %}
+home
+{% endblock pagetitle %}
+
+
+{% block body %}
+<div class="hero_area ">
+
+  <!-- slider section -->
+  <section class="slider_section " id="home" >
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" >
+      
+              
+              <h1 align="center">
+                  Transforming Agriculture with Modern Solutions
+              </h1>
+              <p align="center" style="color: black; font-size: 25px; ">
+                  Agrobloom is transforming agriculture with innovative solutions, streamlining practices, enhancing productivity, and promoting sustainability.
+                  From advanced technology to personalized recommendations, we're revolutionizing farming for a brighter future.
+              </p>
+ 
+    </div>
+  </section>
+  <!-- end slider section -->
+  <section class="service_section layout_padding" id="services">
+    <div class="container">
+      <h2 class="custom_heading">Our Services</h2>
+      <p class="custom_heading-text"></p>
+      <div class=" layout_padding2">
+        <div class="card-deck">
+          <div class="card" onclick="redirectTo('/index')">
+            <img class="card-img-top" src="static/images/card-item-1.png" alt="Card image cap" />
+            <div class="card-body" >
+              <h5 class="card-title"> <b>Disease Detection</b></h5>
+              <p class="card-text" >
+                At Agrobloom, we simplify disease detection for farmers. With just a picture of a leaf, our advanced technology swiftly detects diseases affecting your crops. We offer this service for providing immediate solutions to combat the detected disease. 
+              </p>
+            </div>
+          </div>
+          <div class="card" onclick="redirectTo('/crop-recommend')">
+            <img class="card-img-top" src="static/images/card-item-2.png" alt="Card image cap" />
+            <div class="card-body">
+              <h5 class="card-title"><b>Crop Recommendation</b></h5>
+              <p class="card-text">
+                At Agrobloom, we make crop recommendation effortless for farmers. Simply provide us with information about your soil, climate, and other relevant factors, and our intelligent system will recommend the best crops for your agricultural needs.  
+            </div>
+          </div>
+
+          <div class="card" onclick="redirectTo('/ftips')">
+            <img class="card-img-top" src="static/images/card-item-3.png" alt="Card image cap" />
+            <div class="card-body">
+              <h5 class="card-title"><b>Smart Farming Tips </b></h5>
+              <p class="card-text">
+                At Agrobloom, we empower farmers with valuable insights and practical tips to optimize their agricultural practices. Our Smart Farming Tips & Insights section offers innovative strategies for enhanced efficiency and productivity.
+              </p>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end section start -->
+
+<!-- crops section -->
+<section class="fruit_section" id="crops">
+  <div class="container">
+    <h2 class="custom_heading">Available Crops Assistance</h2>
+    <p class="custom_heading-text">These are the crops for which we currently provide assistance, and we will expand our support to additional crops in the future.</p>
+    <div class="row layout_padding2">
+      <!-- Gallery -->
+      <div class="gallery">
+        <div class="gallery-row">
+          <div class="gallery-item">
+            <img src="static/images/r.jpg" alt="Crop 1">
+          </div>
+          <div class="gallery-item">
+            <img src="static/images/r1.jpg" alt="Crop 2">
+          </div>
+          <div class="gallery-item">
+            <img src="static/images/r2.jpg" alt="Crop 3">
+          </div>
+          <div class="gallery-item">
+            <img src="static/images/r3.jpg" alt="Crop 4">
+          </div>
+          <div class="gallery-item">
+            <img src="static/images/r5.jpg" alt="Crop 5">
+          </div>
+          <div class="gallery-item">
+            <img src="static/images/r6.jpg" alt="Crop 3">
+          </div>
+          <div class="gallery-item">
+            <img src="static/images/r7.jpg" alt="Crop 4">
+          </div>
+          <div class="gallery-item">
+            <img src="static/images/r8.jpg" alt="Crop 5">
+          </div>
+          <div class="gallery-item">
+            <img src="static/images/r.jpg" alt="Crop 1">
+          </div>
+          <div class="gallery-item">
+            <img src="static/images/r1.jpg" alt="Crop 2">
+          </div>
+          <div class="gallery-item">
+            <img src="static/images/r2.jpg" alt="Crop 3">
+          </div>
+          <div class="gallery-item">
+            <img src="static/images/r3.jpg" alt="Crop 4">
+          </div>
+          <div class="gallery-item">
+            <img src="static/images/r5.jpg" alt="Crop 5">
+          </div>
+          <div class="gallery-item">
+            <img src="static/images/r6.jpg" alt="Crop 3">
+          </div>
+          <div class="gallery-item">
+            <img src="static/images/r7.jpg" alt="Crop 4">
+          </div>
+          <div class="gallery-item">
+            <img src="static/images/r8.jpg" alt="Crop 5">
+        </div>
+        <!-- Repeat the above structure for more rows -->
+      </div>
+      <!-- End Gallery -->
+    </div>
+  </div>
+</section>
+
+<!-- tasty section -->
+<section class="tasty_section">
+  <div class="container_fluid">
+    <h2>
+      JAI JAWAN JAI KISAN
+    </h2>
+  </div>
+</section>
+
+
+
+ <!-- contact section -->
+ <section class="contact_section layout_padding" id="contact">
+  <div class="container">
+    <h2 class="font-weight-bold">Contact Us</h2>
+    <div class="row">
+      <div class="col-md-8 mx-auto">
+        <form action="">
+          <div class="contact_form-container">
+            <!-- Contact form fields go here -->
+            <div>
+              <div>
+                <input type="text" placeholder="Name">
+              </div>
+              <div>
+                <input type="text" placeholder="Phone Number">
+              </div>
+              <div>
+                <input type="email" placeholder="Email">
+              </div>
+
+              <div class="mt-5">
+                <input type="text" placeholder="Message">
+              </div>
+              <div class="mt-5">
+                <button type="submit">
+                  send
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <address>
+      <p><b>Address</b></p>
+    <p>123 Main Street</p>
+    <p>Kolhapur, Maharashtra</p>
+    <p>India</p>
+  </address>
+</section>
+<!-- end contact section -->
+
+
+<script>
+  function redirectTo(url) {
+      // Redirect to the specified URL
+      window.location.href = url;
+  }
+  </script>
+  
+<!-- end crops section -->
+
+{% endblock body %}

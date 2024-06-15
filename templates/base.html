@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+    <!-- title -->
+  <title> {% block pagetitle %}
+
+    {% endblock pagetitle %}</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/bootstrap.css')}}" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="{{url_for('static', filename='css/style.css')}}" rel="stylesheet" />
+
+  <!-- responsive style -->
+  <link href="{{url_for('static', filename='css/responsive.css')}}" rel="stylesheet" /> 
+
+  <style>
+    .header_section {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        background-color: #ffffff;
+        
+
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      
+      address {
+        text-align: center;
+      }
+      
+
+      .logo-container {
+        display: flex;
+        align-items: center;
+      }
+      
+      .logo {
+        margin-left: 10px; /* Add margin for spacing */
+        height: auto;
+        max-height: 100%; /* Ensure the logo does not exceed the height of the address */
+      }
+      
+  </style>
+
+  <script type="text/javascript" src="C:\Users\shivam\Desktop\Plant-Disease-Detection-main\Flask Deployed App\static\js\cities.js"></script>
+</head>
+
+<body>
+<div class="hero_area">
+    <!-- header section starts -->
+    <header class="header_section">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
+            <a class="navbar-brand" href="/">
+              <img src="static/images/logo.png" alt="" /><span>AGROBLOOM</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+  
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/market">Market</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#crops">Crops</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="quote_btn-container ml-0 ml-lg-4 d-flex justify-content-center">
+                <a href="/aboutus">Contact Us</a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+    {% block body %}
+
+    {% endblock body %}
+
+
+    
+    
+    
+    <div id="google_element"></div>
+    
+    
+    <!-- footer section -->
+    <section class="container-fluid footer_section">
+      <p> AGROBLOOM </p>
+    </section>
+    <!-- end footer section -->
+    
+    
+
+
+
+</div>
+
+
+<!-- JavaScript files -->
+<script>
+  function loadGoogleTranslate(){
+    new google.translate.TranslateElement("google_element")
+  }
+</script>
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+</body>
+<!-- <script>
+    if (window.matchMedia("(max-width: 767px)").matches)
+    {
+        // The viewport is less than 768 pixels wide
+        document.write("This is a mobile device.");
+        window.location.replace('/mobile-device');
+
+    } else {
+        
+        // The viewport is at least 768 pixels wide
+        document.write("This is a tablet or desktop.");
+    }
+</script> -->
+<!-- <script>
+    if(screen.width <= 700){
+        document.location = 'manthan2.html';
+    }
+</script> -->
+</html>

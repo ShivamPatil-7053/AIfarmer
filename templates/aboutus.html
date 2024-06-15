@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% block pagetitle %}
+About Us
+{% endblock pagetitle %}
+
+{% block body %}
+
+<div class="row mb-5 text-center text-white laptop">
+    <div class="col-lg-10 mx-auto">
+        <h1 class="display-4" style="padding-top: 10%;font-weight: 400;color: rgb(4, 54, 4);"><b>📞About Us📞</b></h1>
+        <p class="lead" style="font-weight: 500;color: black;">For Any Queries & Suggestions Contact Us. We Are Happy To
+            Help.</p>
+    </div>
+</div>
+
+     <!-- contact section -->
+  <section class="contact_section layout_padding" id="contact">
+    <div class="container">
+      <h2 class="font-weight-bold">Contact Us</h2>
+      <div class="row">
+        <div class="col-md-8 mx-auto">
+          <form method="POST" action="/aboutus" >
+            <div class="contact_form-container">
+              <!-- Contact form fields go here -->
+              <div>
+                <div>
+                  <input type="text" placeholder="Name" name = 'name'>
+                </div>
+                <div>
+                  <input type="text" placeholder="Phone Number" name="phone">
+                </div>
+                <div>
+                  <input type="email" placeholder="Email" name = 'email'>
+                </div>
+
+                <div class="mt-5">
+                  <input type="text" placeholder="Message" name="text" >
+                </div>
+                <div class="mt-5">
+                  <button>
+                    send
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <address>
+        <p><b>Address</b></p>
+      <p>123 Main Street</p>
+      <p>Kolhapur, Maharashtra</p>
+      <p>India</p>
+    </address>
+  </section>
+  <!-- end contact section -->
+
+
+{% endblock body %}
